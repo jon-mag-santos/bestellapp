@@ -1,0 +1,189 @@
+.content-wrapper {
+    gap: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.main-content {
+    width: calc(100%);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content-menucard {
+    padding: 32px;
+    width: 100%;
+}
+
+.basket-wrapper {
+    width: 400px;
+    flex-grow: 1;
+    padding: 16px;
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.3)
+}
+
+.basket-responsive-wrapper {
+    width: 100%;
+    flex-grow: 1;
+    padding: 16px;
+    justify-content: center;
+}
+
+.basket {
+    width: 100%;
+    height: 400px;
+    position: sticky;
+    top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.basket-responsive {
+    width: 96.5%;
+    height: 100vh;
+    position: fixed;
+    top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: white;
+    padding: 16px;
+}
+
+.order-basket {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.empty-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-basket-text {
+    color: orange;
+    font-weight: 400;
+}
+
+.restaurant-head {
+    width: 100%;
+    height: 150px;
+    background-image: url('../assets/img/pizza-header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.restaurant-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: -35px;
+}
+
+.restaurant-rating {
+    color: orange;
+    font-weight: 500;
+}
+
+.restaurant-navbar {
+    background: #f7f6f1;
+    padding: 24px 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.meal-head {
+    background-image: url('../assets/img/pizza-meal.jpg');
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.side-head {
+    background-image: url('../assets/img/potatoes-side.jpg');
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.basket h3 {
+    text-align: center;
+}
+
+.basket-responsive h3 {
+    text-align: center;
+}
+
+.meal-wrapper {
+    max-width: calc(100% - 40px);
+    margin: 0 2% 0 0;
+    padding: 8px 12px;
+    flex: 1;
+}
+
+.product-order-basket {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 8px;
+}
+
+.amount-price-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+
+.amount-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.subtotal-basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery-basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pick-up-basket {
+    display: flex;
+    gap: 4px;
+    justify-content: right;
+}
+
+.total-basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}

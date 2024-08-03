@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellapp</title>
+    <link rel="icon" href="./assets/icon/bestellapp-icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <script src="./script.js"></script>
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+</head>
+<body onload="onload()">
+    <header><img src="./assets/img/Logo.png" alt=""></header>
+    <div class="content-wrapper">
+        <section class="main-content">
+            <div class="restaurant-head">
+                <div class="restaurant-logo">
+                    <img src="./assets/img/cafe.png" alt="">
+                </div>
+            </div>
+            <div id="restaurant-title"></div>
+            <div class="restaurant-navbar">
+                <img src="./assets/icon/arrowhead.png" alt="" class="arrow-navbar">
+                <a href="#meal-head">Hauptgerichte</a>
+                <a href="#side-head">Beilage</a>
+            </div>
+            <div class="content-menucard">
+                <div id="meal-head" class="meal-head"></div>
+                <div id="meal-menu" class="meal-menu">
+                    <h3>Hauptgerichte</h2>
+                </div>
+                <div id="side-head" class="side-head"></div>
+                <div id="side-menu" class="side-menu">
+                    <h3>Beilage</h2>
+                    <div>soon to be added...</div>
+                </div>
+            </div>
+        </section>
+        <section class="basket-wrapper">
+            <div class="basket">
+                <h3>Warenkorb</h3>
+                <div id="order-basket" class="order-basket"></div>
+                <div id="subtotal-basket" class="subtotal-basket"></div>
+                <div id="delivery-basket" class="delivery-basket"></div>
+                <div id="pick-up-basket" class="pick-up-basket" style="display: none;">
+                    <input type="checkbox" id="pick-up-checkbox" name="pick-up" value="pick-up" onchange="setPickUp()">
+                    <label for="pick-up"> Abholen</label><br>
+                </div>
+                <div id="total-basket" class="pick-up-basket"></div>
+            </div>
+        </section>
+    </div>
+    <div class="btn-basket" onclick="openBasket()" ><span>Warenkorb</span></div>
+    <div id="basket-responsive-wrapper" class="basket-responsive-wrapper closed-basket">
+        <div class="basket-responsive">
+            <div class="btn-close-wrapper">
+                <div class="btn-close-basket" onclick="closeBasket()"></div>
+            </div>
+            <h3>Warenkorb</h3>
+            <div id="order-basket-responsive" class="order-basket"></div>
+            <div id="subtotal-basket-responsive" class="subtotal-basket"></div>
+            <div id="delivery-basket-responsive" class="delivery-basket"></div>
+            <div id="pick-up-basket-responsive" class="pick-up-basket" style="display: none;">
+                <input type="checkbox" id="pick-up-checkbox-responsive" name="pick-up" value="pick-up" onchange="setPickUp()">
+                <label for="pick-up"> Abholen</label><br>
+            </div>
+            <div id="total-basket-responsive" class="pick-up-basket"></div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
