@@ -140,6 +140,9 @@ function getTotalBasket() {
 
     let totalBasketResponsive = document.getElementById("total-basket-responsive");
     totalBasketResponsive.innerHTML = (basket.length == 0 ? "" : `<div>Gesamt</div><div>${(total).toFixed(2).toString().replace('.', ',')}€</div>`);
+
+    let btnTotalBasket = document.getElementById("btn-basket-total");
+    btnTotalBasket.innerHTML = (basket.length == 0 ? "" : ` (${(total).toFixed(2).toString().replace('.', ',')}€)`);
 }
 
 function setPickUp() {
