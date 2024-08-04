@@ -43,6 +43,37 @@ header img {
     height: 40px;
 }
 
+footer {
+    padding: 24px 32px;
+    background-color: #0a3847;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
+    height: 40px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.div-impressum {
+    padding: 24px 32px;
+    height: 434px;
+}
+
+.div-datenschutz {
+    padding: 24px 32px;
+}
+
 a {
     text-decoration: none;
     color: black;
