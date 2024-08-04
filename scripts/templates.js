@@ -67,6 +67,8 @@ function getBasket() {
                 element.price);
             subtotal += (element.amount * element.price);
         }
+
+        saveToLocalStorage();
     }else{
         orders.innerHTML = `<div class="empty-basket">
                                 <img class="img-empty-basket" src="./assets/icon/trolley-cart.png">
@@ -77,6 +79,8 @@ function getBasket() {
                                         <img class="img-empty-basket" src="./assets/icon/trolley-cart.png">
                                         <div class="empty-basket-text">Wähle leckere Gerichte aus der Karte und bestelle dein Menü.</div>
                                     </div>`;
+
+        deleteFromLocalStorage();
     }
 
     getTotalBasket();
