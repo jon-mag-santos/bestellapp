@@ -178,3 +178,11 @@ function openBasket() {
 
     basketResponsive.classList.remove("closed-basket");
 }
+
+function openCloseMenu() {
+    let btnMenu = document.getElementById("dropbtn-menu");
+    btnMenu.classList.toggle("menu-bars");
+    btnMenu.classList.toggle("menu-x-bars");
+    let menu = document.getElementById("drop-content");
+    menu.classList.toggle("open-menu");
+}

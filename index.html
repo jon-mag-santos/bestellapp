@@ -13,7 +13,17 @@
     <script src="./scripts/templates.js"></script>
 </head>
 <body onload="onload()">
-    <header><a href="./index.html"><img src="./assets/img/Logo.png" alt=""></a></header>
+    <header>
+        <a href="./index.html"><img src="./assets/img/Logo.png" alt=""></a>
+        <div class="dropdown">
+            <i id="dropbtn-menu" class="dropbtn menu-bars" onclick="openCloseMenu()"></i>
+            <div id="drop-content" class="dropdown-content">
+                <a href="index.html">Start</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+          </div>
+    </header>
     <div class="content-wrapper">
         <section class="main-content">
             <div class="restaurant-head">
