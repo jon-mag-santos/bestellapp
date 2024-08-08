@@ -9,6 +9,7 @@
 
 .delete-product-basket {
     height: 16px;
+    cursor: pointer;
 }
 
 .add-to-basket {
